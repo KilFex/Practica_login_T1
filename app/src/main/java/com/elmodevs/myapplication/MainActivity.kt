@@ -16,13 +16,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.login.setOnClickListener{
 
-            Toast.makeText(
-                this, "Ingresado correctamente",
-                Toast.LENGTH_LONG
-            ).show()
+            val password = binding.tPassword.text.toString()
 
-            val intent = Intent(this, Hour::class.java)
-            startActivity(intent)
+            if (password.length < 8) {
+
+                Toast.makeText(
+                    this,
+                    "La contraseña debe tener al menos 8 caracteres",
+                    Toast.LENGTH_LONG
+                ).show()
+            } else {
+
+                Toast.makeText(
+                    this,
+                    "Ingresado correctamente",
+                    Toast.LENGTH_LONG
+                ).show()
+
+                val intent = Intent(this, Hour::class.java)
+                startActivity(intent)
+            }
 
         }
     }

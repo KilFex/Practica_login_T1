@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:gravity="center_vertical"
-            android:layout_marginBottom="70dp">
+            android:layout_marginBottom="70dp"
+            android:layout_marginHorizontal="10dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -81,6 +82,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/t_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
            android:inputType="textPassword"/>

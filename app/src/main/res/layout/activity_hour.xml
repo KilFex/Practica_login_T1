@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:text="Ir al inicio"
         android:textColor="@android:color/white"
-        android:backgroundTint="#0A0F2C"
+        android:backgroundTint="#03050F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
