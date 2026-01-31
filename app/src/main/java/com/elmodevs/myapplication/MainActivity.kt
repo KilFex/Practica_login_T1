@@ -2,10 +2,8 @@ package com.elmodevs.myapplication
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.elmodevs.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,9 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.ingresar.setOnClickListener{
-            val intent = Intent(this, Login::class.java)
+        binding.login.setOnClickListener{
+
+            Toast.makeText(
+                this, "Ingresado correctamente",
+                Toast.LENGTH_LONG
+            ).show()
+
+            val intent = Intent(this, Hour::class.java)
             startActivity(intent)
+
         }
     }
 }
